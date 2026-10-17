@@ -5,7 +5,12 @@ machines to a central monitoring server over UDP, with sequence-gap detection,
 threshold alerts, and Wireshark-based performance analysis.
 
 > Course project: Computer Network & Data Communication, VIT Vellore
-> Team: Sruthika Sivagami R (25BIT0438), Kritika P (25BIT0321), Vaishnavi Thiruvengadam (25BIT0431)
+
+## Team
+* **Vaishnavi Thiruvengadam**
+* **Sruthika Sivagami R**
+* **Kritika P**
+
 
 ## Problem
 
@@ -61,7 +66,7 @@ Server: `127.0.0.1:8080`, `AF_INET` / `SOCK_DGRAM`, 1024-byte receive buffer.
 - Validates fields and sensor ranges (temp 0–200 °C, vibration 0–100 g)
 - Tracks per-machine received count, missing packets (sequence gaps) and alerts
 - Alerts: temperature > 80 °C, vibration > 7 g
-- Measures one-way latency for every packet (see [How latency is measured](#how-latency-is-measured))
+- Measures one-way latency for every packet.
 - On Ctrl+C prints a performance summary: duration, packet rate, throughput,
   average latency, and per-machine received / gaps / loss % / alerts
 
@@ -91,7 +96,7 @@ industrial-udp-monitoring/
 
 ## How to run
 
-Requires Python 3.8+. No external dependencies. (On Windows, `py` works in place of `python`.)
+Requires Python 3.8+. No external dependencies.
 
 ```bash
 # Terminal 1
